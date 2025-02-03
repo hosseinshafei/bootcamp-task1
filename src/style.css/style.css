@@ -1,0 +1,82 @@
+body {
+  font-family: "vaziri";
+  margin: 0;
+  text-align: center;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+h2 {
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 2.2rem;
+}
+.requests {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+.card {
+  width: 250px;
+  /* padding: 2rem;  */
+  border-radius: 8px;
+  text-align: right;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  /* background-color: gold; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.badge {
+  background-color: #afcedd;
+  color: #234894;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.category {
+  color: #234894;
+}
+.card-body {
+}
+.title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.id {
+  color: #696969;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.user {
+  /* background-color: #234894; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+.btn {
+  background-color: #219f95;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #00796b;
+}
