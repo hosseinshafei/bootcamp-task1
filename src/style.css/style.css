@@ -18,16 +18,16 @@ h2 {
 }
 .requests {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
 }
 .card {
   width: 250px;
-  /* padding: 2rem;  */
+
   border-radius: 8px;
   text-align: right;
-  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1); */
 }
 .card-header {
   /* background-color: gold; */
@@ -36,6 +36,7 @@ h2 {
   font-size: 1rem;
   margin-bottom: 5px;
 }
+
 .badge {
   background-color: #afcedd;
   color: #234894;
@@ -56,12 +57,15 @@ h2 {
   font-weight: 400;
   font-size: 0.8rem;
 }
-.user {
+.user__btn {
   /* background-color: #234894; */
   display: flex;
-  /* justify-content: center; */
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
+}
+.user {
 }
 .user img {
   width: 30px;
@@ -74,9 +78,23 @@ h2 {
   color: white;
   border-radius: 8px;
   border: none;
-  padding: 10px;
+  padding: 18px 10px;
   cursor: pointer;
 }
 .btn:hover {
   background-color: #00796b;
+}
+.date {
+  font-size: 0.8rem;
+  color: #696969;
+}
+@media screen and (min-width: 768px) {
+  .requests {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .requests {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
